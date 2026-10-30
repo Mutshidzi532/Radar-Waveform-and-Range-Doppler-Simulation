@@ -1,0 +1,38 @@
+RADAR WAVEFORM AND RANGE-DOPPLER SIMULATION
+===========================================
+
+1. PROJECT OVERVIEW
+This project uses MATLAB to explore linear frequency-modulated radar waveforms, matched filtering, range estimation, Doppler processing, and a conceptual range-Doppler map.
+
+2. OBJECTIVES
+- Generate a simulated linear frequency-modulated chirp.
+- Simulate target echoes and matched-filter pulse compression.
+- Explore range estimation and Doppler frequency analysis.
+- Visualise a simplified range-Doppler response.
+- Document a conceptual radar system architecture.
+
+3. WAVEFORM PARAMETERS
+Bandwidth: 20 MHz
+Pulse duration: 20 microseconds
+Sampling frequency: 100 MHz
+Carrier frequency for Doppler examples: 10 GHz
+
+4. KEY ENGINEERING CONCEPTS
+Range resolution is related to signal bandwidth. For an ideal waveform, the approximate range resolution is c/(2B).
+Round-trip propagation delay can be converted to range using R = c*tau/2.
+For a monostatic radar and a target moving radially, Doppler frequency is related to velocity by fd = 2*v*fc/c, subject to the chosen sign convention.
+
+5. SIMULATION OUTPUTS
+- LFM chirp waveform and frequency sweep.
+- Simulated target echo and pulse-compression output.
+- Target range profile.
+- Doppler spectrum.
+- Simplified range-Doppler visualisations.
+- Conceptual radar system architecture diagram.
+
+6. LIMITATIONS
+This project is a simulation, not a physical radar system. It does not demonstrate real antenna hardware, RF circuitry, FPGA implementation, or measurements from a real radar.
+The range-Doppler implementation uses simplified echo and processing assumptions. Its target estimates must be validated before quantitative performance claims are made.
+
+7. CONCLUSION
+The project demonstrates an initial MATLAB-based exploration of radar waveform generation and signal processing. Further work should validate range and velocity estimates, introduce noise and clutter models, and assess detection performance.
